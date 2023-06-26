@@ -59,7 +59,7 @@
         align-items: start;
         text-align: start;
         background-color: #e7e7dd;
-        padding-top: 80px;
+        padding-top: 0;
     }
 }
 
@@ -129,4 +129,9 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 471px;
+}
+@media screen and (min-width: 920px) {
+    .presentation__photo {
+        height: unset;
+    }
 }
