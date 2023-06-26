@@ -1,0 +1,26 @@
+@import "presentation-block.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-wrapper {
+    margin: 20px auto 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.reason {
+    background-color: #3e3b3a;
+    font-size: 25px;
+    color: white;
+    padding: 30px 0;
+    font-family: 'Cormorant Infant',Arial,cursive;
+    text-align: center;
+}

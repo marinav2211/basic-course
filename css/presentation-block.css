@@ -1,0 +1,132 @@
+.presentation {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 920px){
+    .presentation {
+        flex-direction: row;
+    }
+
+    .presentation > div {
+        flex: 1;
+    }
+}
+
+.presentation__keywords {
+    display: none;
+}
+@media screen and (min-width: 920px) {
+    .presentation__keywords{
+        display: flex;
+        color: #3e3b3a;
+        background-color: #e7e7dd;
+        min-width: 0;
+        overflow: hidden;
+        align-items: center;
+    }
+    .presentation__keywords-text {
+
+        font-family: 'Cormorant Infant',Arial,cursive;
+        font-style: italic;
+        font-size: 30px;
+        white-space: nowrap;
+        margin-left: -30px;
+        color: #3e3b3a;
+        background-color: #e7e7dd;
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+    }
+
+}
+
+.course-info {
+    background-color: white;
+    min-width: 0;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 20px;
+    text-align: center;
+    align-items: center;
+}
+@media  screen and (min-width: 920px){
+    .course-info {
+        align-items: start;
+        text-align: start;
+        background-color: #e7e7dd;
+        padding-top: 80px;
+    }
+}
+
+.course-info__subtitle {
+    font-family: 'Cormorant Infant',Arial,cursive;
+    font-size: 42px;
+    padding-top: 20px;
+    max-width: 250px;
+    order: 1;
+}
+
+@media  screen and (min-width: 920px) {
+    .course-info__subtitle {
+        order: 2;
+    }
+}
+
+.course-info__title {
+    font-family: 'Montserrat',Arial,cursive;
+    font-weight: lighter;
+    font-size: 20px;
+    padding-top: 40px;
+    width: 145px;
+    order: 1;
+}
+@media  screen and (min-width: 920px) {
+    .course-info__title {
+        border-top: 1px black solid;
+        order: 2;
+    }
+}
+
+.course-info__dates {
+    font-family: 'Bad Script', cursive;
+    font-size: 25px;
+    margin-top: 40px;
+    border-bottom: 1px black solid;
+    order: 3;
+}
+
+@media screen and (min-width: 920px) {
+    .course-info__dates {
+        font-size: 30px;
+        order: 1;
+    }
+}
+
+.course-info__button {
+    background-color: #3e3b3a;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #e7e7dd;
+    border-color: transparent;
+    border-width: 2px;
+    border-radius: 30px;
+    padding: 5px 10px;
+    width: 250px;
+    margin-top: 40px;
+    order: 4;
+
+}
+
+.presentation__photo {
+    background-image: url("../img/main_photo.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 471px;
+}
